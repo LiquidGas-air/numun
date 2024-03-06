@@ -1,0 +1,280 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMUN</title>
+    <link rel="shortcut icon" type="x-icon" href="{% static '/pover/img/jpgtopngconverter-com.png' %}">
+    <link rel="stylesheet" href="{% static '/pover/css/style.css' %}">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <style>
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/backgroundmain.jpg' %}");
+            /* background-color: #779768; */
+            /* background-color: #024173; */
+            background-size: cover;
+            background-position: center;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .team-selection {
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags4.jpg' %}");
+            width: 100%;
+        }
+        .footer {
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags5.jpg' %}");
+            width: 100%;
+            padding:30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align:center;
+        }
+        .features{
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags2.jpg' %}");
+
+        }
+        .benefits{
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags3.jpg' %}");
+
+        }
+        .info{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags5.jpg' %}");
+            /* background-color: #779768; */
+            /* background-color: #024173; */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+        }
+        </style>
+</head>
+<body>
+    <section id="main">
+        <div class="banner">
+            <div class="navbar">
+                <img src="{% static '/pover/img/numunfinallogo.png' %}" class="logo">
+                <ul>
+                    <li><a href="#main">Main</a></li>
+                    <li><a href="#mun">What is MUN</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h1 style="margin-bottom: 20%;">NU Model United Nations Club</h1>
+            <div>
+                {% for link in links %}
+                    <a id="open-new-window" href="{{link.url}}">{{link.name}}</button>
+                {% endfor %}
+                <!-- https://docs.google.com/forms/d/e/1FAIpQLSdICaftn7GXmEc9XP_Qk2OMRKY8FB_-hzMEN24X2POTymJesg/viewform -->
+            </div>
+            <!-- <script>
+                const openNewWindowButton = document.getElementById("open-new-window");
+                openNewWindowButton.addEventListener("click", function() {
+                    window.open("https://drive.google.com/file/d/1cvXRmIESZX2Iu6gxaq9jKJRJ0vGqILmK/view?usp=sharing", "_blank"); // Replace "your_target_url" with your actual URL
+                });
+                const openNewWindowButton2 = document.getElementById("open-new-window2");
+                openNewWindowButton2.addEventListener("click", function() {
+                    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdICaftn7GXmEc9XP_Qk2OMRKY8FB_-hzMEN24X2POTymJesg/viewform", "_blank"); // Replace "your_target_url" with your actual URL
+                });
+            </script> -->
+            <!-- <script>
+                // script.js
+                const downloadButton = document.getElementById("download-button");
+
+                downloadButton.addEventListener("click", function() {
+                const fileURL = "ROP.pdf"; // Replace with your file URL
+                const fileName = "ROP.pdf"; // Set the downloaded file name
+
+                fetch(fileURL)
+                    .then(response => response.blob())
+                    .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = fileName;
+                    link.click();
+
+                    // Revoke the temporary URL after download (optional)
+                    window.URL.revokeObjectURL(url);
+                    })
+                    .catch(error => {
+                    console.error("Error downloading file:", error);
+                    // Handle download error (optional)
+                    });
+                });
+
+
+
+            </script> -->
+        </div>
+    </section>
+    <section class="info" id="mun">
+        <div class="info-title">
+            <img src="{% static '/pover/img/munsample.JPG' %}" style="width: 40%; height: auto;">
+            <h3>Model United Nations (MUN) is an academic simulation of the United Nations that aims to educate participants about current events, diplomacy, and international relations. Participants, often students, simulate UN committees and other international bodies, engaging in debates and discussions on global issues.</h3>
+        </div>
+    </section>
+    
+    <section class="features">
+            <div class="divtilesWrap">
+                <ul class="tilesWrap">
+                
+                    <h2 style="text-align: center;   padding-top: 20px;
+                    padding-bottom: 20px; color: #fff;">Features:</h2>
+                    
+                    <li>
+                    <h2>01</h2>
+                    <h3>Research</h3>
+                    <p>Delegates research their assigned country's position on various topics and prepare to articulate and defend these positions during debates.</p>
+                    </li>
+                    <li>
+                    <h2>02</h2>
+                    <h3>Debate</h3>
+                    <p>Delegates engage in debates, negotiations, and discussions to address global challenges and draft resolutions.</p>
+        
+                    </li>
+                    <li>
+                    <h2>03</h2>
+                    <h3>Diplomacy</h3>
+                    <p>Participants practice diplomacy and negotiation skills, working collaboratively to find solutions to complex issues.</p>
+        
+                    </li>
+                    <li>
+                    <h2>04</h2>
+                    <h3>Education</h3>
+                    <p>MUN conferences provide a platform for experiential learning, fostering critical thinking, public speaking, and research skills.</p>
+                    </li>
+                    </ul>
+            </div>
+    </section>
+    <section class="benefits">
+            <div class="divtilesWrap">
+                <ul class="tilesWrap">
+                
+                    <h2 style="text-align: center;   padding-top: 20px;
+                    padding-bottom: 20px; color: #fff;">Benefits:</h2>
+                        <li>
+                        <h2>01</h2>
+                        <h3>Academic Enrichment</h3>
+                        <p>MUN enhances participants' understanding of international relations, global issues, and diplomatic processes.</p></li>
+                        <li>
+                        <h2>02</h2>
+                        <h3>Skill Development</h3>
+                        <p>Participants develop valuable skills such as research, public speaking, negotiation, and teamwork.</p>
+        
+                        </li>
+                        <li>
+                        <h2>03</h2>
+                        <h3>Networking</h3>
+                        <p>MUN conferences bring together students from diverse backgrounds, fostering cross-cultural understanding and networking opportunities.</p>
+        
+                        </li>
+                        <li>
+                        <h2>04</h2>
+                        <h3>Leadership Opportunities</h3>
+                        <p>MUN offers opportunities for leadership roles within committees, organizing teams, and conference planning committees.</p>
+                        </li>
+                    </ul>
+        
+            </div>
+        </div>
+
+    </section>
+    <section class="team-selection" id="aboutus">
+        <div class="team-title">
+            <h1 style="padding-bottom: 20px; color: #fff;">Our Team</h1>
+        </div>
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="{% static '/pover/img/AIZADA.jpg' %}">
+                </div>
+                <div class="team-detail">
+                    <h3>AIZADA APAROVA</h3>
+                    <p>PRESIDENT</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="{% static '/pover/img/DIAS.jpg' %}">
+                </div>
+                <div class="team-detail">
+                    <h3>DIAS MUSSAGALIYEV</h3>
+                    <p>VICE-PRESIDENT</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="{% static '/pover/img/AIZAT.jpg' %}">
+                </div>
+                <div class="team-detail">
+                    <h3>AIZAT INUSSOVA</h3>
+                    <p>VICE-PRESIDENT</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="{% static '/pover/img/AIDANA.jpg' %}">
+                </div>
+                <div class="team-detail">
+                    <h3>AIDANA YERKIN</h3>
+                    <p>VICE-PRESIDENT</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="{% static '/pover/img/RAMAZAN.jpg' %}">
+                </div>
+                <div class="team-detail">
+                    <h3>RAMAZAN AKZHOLTAYEV</h3>
+                    <p>VICE-PRESIDENT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer">
+            <div class="row">
+                <a href="https://t.me/numunclub"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.instagram.com/numunclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#mun">What is MUN</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="row">Designed By: titoS 
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
