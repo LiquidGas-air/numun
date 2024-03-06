@@ -1,280 +1,370 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUMUN</title>
-    <link rel="shortcut icon" type="x-icon" href="{% static '/pover/img/jpgtopngconverter-com.png' %}">
-    <link rel="stylesheet" href="{% static '/pover/css/style.css' %}">
+<!-- This site was created in Ycode. https://www.ycode.com -->
+<!-- Last Published: Tuesday, 05-Mar-24 21:09:40 UTC -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="$2y$10$nJcQmXvAoCGOPPg3c0rxOOiLeQB8VboTnyQHfKmE9f29YZrr0ip5S">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>NUMUN</title>
+        <link rel="shortcut icon" type="x-icon" href="{% static '/pover/img/jpgtopngconverter-com.png' %}">
+        <link href="{% static '/pover/css/style.css' %}" rel="stylesheet">
+        
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-    <style>
-        .banner{
-            width: 100%;
-            height: 100vh;
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/backgroundmain.jpg' %}");
-            /* background-color: #779768; */
-            /* background-color: #024173; */
-            background-size: cover;
-            background-position: center;
-            /* display: flex; */
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .team-selection {
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags4.jpg' %}");
-            width: 100%;
-        }
-        .footer {
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags5.jpg' %}");
-            width: 100%;
-            padding:30px 0px;
-            font-family: 'Play', sans-serif;
-            text-align:center;
-        }
-        .features{
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags2.jpg' %}");
+    
+        
+    </head>
+    
+    <body class="min-h-[100%]">
+        <div class="contents" id="ycode-generated-app">
+            <div class="contents" id="ycode-main-content" :key="key">
+                
+                <section style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/backgroundmain.jpg' %});
+                " class="main">
+                    <div class="nav">
+                        <input type="checkbox" id="nav-check">
+                        <div class="nav-btn">
+                          <label for="nav-check">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </label>
+                        </div>
+                        <img src="{% static '/pover/img/numunfinallogo.png' %}" class="logo">
 
-        }
-        .benefits{
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags3.jpg' %}");
+                        <div class="nav-links">
+                            <a style="color: #fff;font-size: 100%;
+                            " class="no-underline focus:outline-none text-opacity-[75%] text-[14px]" href="#main">Main</a> 
+                            <a style="color: #fff;font-size: 100%;
+                            " class="no-underline focus:outline-none text-opacity-[75%] text-[14px]" href="#mun">What is MUN</a> 
+                            <a style="color: #fff;font-size: 100%;
+                            " class="no-underline focus:outline-none text-opacity-[75%] text-[14px]" href="#aboutus">About Us</a> 
+                            <a style="color: #fff;font-size: 100%;
+                            " class="no-underline focus:outline-none text-opacity-[75%] text-[14px]" href="#contacts">Contacts</a>         
+                        </div>
+                    </div>
+                    <section id="main" class="pt-[140px] pb-[140px] flex flex-col">
+                        <div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]">
+                            <div class="flex flex-col items-center justify-center sm:items-stretch gap-[20px]">
+                                <h1 style="color: #fff;padding-top: 70px;padding-bottom: 70px;" class="text-[48px] text-[black] leading-[1.1] font-bold tracking-[-0.025em] text-center max-w-[640px] sm:text-[36px]">
+                                    NU Model United Nations Club
+                                </h1>
+                                
+                                <div class="flex flex-row justify-center items-center gap-[12px] sm:flex-col sm:items-stretch">
+                                {% for link in links %}
+                                    <a id="open-new-window" href="{{link.url}}"><span>{{link.name}}</span></button>
+                                {% endfor %}
+                                </div>
+                                <script>
+                                    const openNewWindowButton = document.getElementById("open-new-window");
+                                    openNewWindowButton.addEventListener("click", function() {
+                                        window.open("https://drive.google.com/file/d/1cvXRmIESZX2Iu6gxaq9jKJRJ0vGqILmK/view?usp=sharing", "_blank"); // Replace "your_target_url" with your actual URL
+                                    });
+                                    const openNewWindowButton2 = document.getElementById("open-new-window2");
+                                    openNewWindowButton2.addEventListener("click", function() {
+                                        window.open("https://docs.google.com/forms/d/e/1FAIpQLSdICaftn7GXmEc9XP_Qk2OMRKY8FB_-hzMEN24X2POTymJesg/viewform", "_blank"); // Replace "your_target_url" with your actual URL
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section  style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/flags2.jpg' %});
+                " id="mun" class="pt-[140px] pb-[140px] flex flex-col">
+                    <div v-show="showHideElements['mun']" class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]" id="mun">
+                        <div style="
+                        border-radius: 20px;
+                        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                        background: transparent;
+                        border: 2px solid #4b8cca;
+                          " class="grid grid-cols-2 gap-[72px] items-center lg:grid-cols-1">
+                            <div class="flex flex-col gap-[20px]">
+                                <h1 style="color: #fff;" class="text-[48px] text-[black] leading-[1.1] font-bold tracking-[-0.025em] sm:text-[36px] text-left">
+                                    What is MUN&#63;
+                                </h1>
+                                <p style="color: #fff;"  class="text-[20px] text-[black] text-opacity-[50%] text-left">Model United Nations (MUN) is an academic simulation of the United Nations that aims to educate participants about current events, diplomacy, and international relations. Participants, often students, simulate UN committees and other international bodies, engaging in debates and discussions on global issues.</p>
+                            </div>
+                            <div >
+                                <img class="w-[auto] h-[auto] max-w-[100%] rounded-[12px]"  src="{% static '/pover/img/munsample.JPG' %}" sizes="200vw">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/flags3.jpg' %});
+                " class="pt-[140px] pb-[140px] flex flex-col">
+                    <div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]">
+                        <div style="
+                        width: 100%;">
+                            <h2 style="text-align: center;   padding-top: 20px;
+                            padding-bottom: 20px; color: #fff; font-size: 40px;">Features:</h2>
+                          
+                        </div>
+                          
+                        <div class="sm:items-stretch grid grid-cols-2 gap-[120px] lg:grid-cols-1 lg:gap-[56px] gap-y-[72px]">
+                                
+                            <div  style="  background-color: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))#70a2d2;
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            background: transparent;
+                            border: 2px solid #4b8cca;
+                          "class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/research.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;" class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Research
+                                    </h3>
+                                    <p  style="color: #fff;" class="text-[18px]">Delegates research their assigned country's position on various topics and prepare to articulate and defend these positions during debates.</p>
+                                </div>
+                            </div>
+                            <div  style="  background-color: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))#70a2d2;
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          "
+                            class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/debate.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Debate
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">Delegates engage in debates, negotiations, and discussions to address global challenges and draft resolutions.</p>
+                                </div>
+                            </div>
+                            <div style="  background-color: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75))#70a2d2;
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          "
+                            class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/diplomacy.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Diplomacy
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">Participants practice diplomacy and negotiation skills, working collaboratively to find solutions to complex issues.</p>
+                                </div>
+                            </div>
+                            <div style="
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          "
+                            class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/education.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Education
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">MUN conferences provide a platform for experiential learning, fostering critical thinking, public speaking, and research skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        }
-        .info{
-            width: 100%;
-            height: 100vh;
-            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("{% static '/pover/img/flags5.jpg' %}");
-            /* background-color: #779768; */
-            /* background-color: #024173; */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            color: #fff;
-        }
-        </style>
-</head>
-<body>
-    <section id="main">
-        <div class="banner">
-            <div class="navbar">
-                <img src="{% static '/pover/img/numunfinallogo.png' %}" class="logo">
-                <ul>
+                <section style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/flags4.jpg' %});" class="pt-[140px] pb-[140px] flex flex-col">
+                    <div  class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]">
+                        <div style="
+                        width: 100%;">
+                            <h2 style="text-align: center;   padding-top: 20px;
+                            padding-bottom: 20px; color: #fff; font-size: 40px;">Benefits:</h2>
+                          
+                        </div>
+                          
+                        <div class="sm:items-stretch grid grid-cols-2 gap-[120px] lg:grid-cols-1 lg:gap-[56px] gap-y-[72px]">
+                            <div style="
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          " class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/a-enr.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Academic Enrichment
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">MUN enhances participants' understanding of international relations, global issues, and diplomatic processes.</p>
+                                </div>
+                            </div>
+                            <div style="
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          " class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/development.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Skill Development
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">Participants develop valuable skills such as research, public speaking, negotiation, and teamwork.</p>
+                                </div>
+                            </div>
+                            <div style="
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          " class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/networking.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Networking
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">MUN conferences bring together students from diverse backgrounds, fostering cross-cultural understanding and networking opportunities.</p>
+                                </div>
+                            </div>
+                            <div style="
+                            border-radius: 20px;
+                            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border: 2px solid #4b8cca;
+                          " style="background-color: #4b8cca;" class="flex gap-[32px] sm:flex-col sm:gap-[20px]">
+                                <img class="max-w-[140px] w-[100%] object-cover max-h-[100px] rounded-[12px]" src="{% static '/pover/img/leadership.png' %}" sizes="200vw">
+                                <div class="flex flex-col gap-[8px]">
+                                    <h3 style="color: #fff;"  class="font-bold text-[20px] leading-[1.25em] tracking-[-0.025em]">
+                                        Leadership Opportunities
+                                    </h3>
+                                    <p style="color: #fff;"  class="text-[18px]">MUN offers opportunities for leadership roles within committees, organizing teams, and conference planning committees.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="yc-lightbox-mount"></div>
+        <!---------------------------------------------------------------------------------------------------->
+        <section style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/flags.jpg' %});
+        " class="team-selection" id="aboutus">
+            <div class="team-title">
+                <h1 style="padding-bottom: 20px; color: #fff;">Our Team</h1>
+            </div>
+            <div class="team-cards">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static '/pover/img/AIZADA.jpg' %}">
+                    </div>
+                    <div class="team-detail">
+                        <h3>AIZADA APAROVA</h3>
+                        <p>PRESIDENT</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static '/pover/img/DIAS.jpg' %}">
+                    </div>
+                    <div class="team-detail">
+                        <h3>DIAS MUSSAGALIYEV</h3>
+                        <p>VICE-PRESIDENT</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static '/pover/img/AIZAT.jpg' %}">
+                    </div>
+                    <div class="team-detail">
+                        <h3>AIZAT INUSSOVA</h3>
+                        <p>VICE-PRESIDENT</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static '/pover/img/AIDANA.jpg' %}">
+                    </div>
+                    <div class="team-detail">
+                        <h3>AIDANA YERKIN</h3>
+                        <p>VICE-PRESIDENT</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="{% static '/pover/img/RAMAZAN.jpg' %}">
+                    </div>
+                    <div class="team-detail">
+                        <h3>RAMAZAN AKZHOLTAYEV</h3>
+                        <p>VICE-PRESIDENT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer style="  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url({% static '/pover/img/flags5.jpg' %});
+        " id="contacts">
+            <div class="footer">
+                <div class="row">
+                    <a target="_blank" href="https://t.me/numunclub"><i class="fa fa-telegram"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/numunclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="mailto:numunclub@nu.edu.kz"><i class="fa fa-envelope"></i></a>
+                </div>
+    
+                <div class="row">
+                    <ul>
                     <li><a href="#main">Main</a></li>
                     <li><a href="#mun">What is MUN</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#contact">Contacts</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="content">
-            <h1 style="margin-bottom: 20%;">NU Model United Nations Club</h1>
-            <div>
-                {% for link in links %}
-                    <a id="open-new-window" href="{{link.url}}">{{link.name}}</button>
-                {% endfor %}
-                <!-- https://docs.google.com/forms/d/e/1FAIpQLSdICaftn7GXmEc9XP_Qk2OMRKY8FB_-hzMEN24X2POTymJesg/viewform -->
-            </div>
-            <!-- <script>
-                const openNewWindowButton = document.getElementById("open-new-window");
-                openNewWindowButton.addEventListener("click", function() {
-                    window.open("https://drive.google.com/file/d/1cvXRmIESZX2Iu6gxaq9jKJRJ0vGqILmK/view?usp=sharing", "_blank"); // Replace "your_target_url" with your actual URL
-                });
-                const openNewWindowButton2 = document.getElementById("open-new-window2");
-                openNewWindowButton2.addEventListener("click", function() {
-                    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdICaftn7GXmEc9XP_Qk2OMRKY8FB_-hzMEN24X2POTymJesg/viewform", "_blank"); // Replace "your_target_url" with your actual URL
-                });
-            </script> -->
-            <!-- <script>
-                // script.js
-                const downloadButton = document.getElementById("download-button");
-
-                downloadButton.addEventListener("click", function() {
-                const fileURL = "ROP.pdf"; // Replace with your file URL
-                const fileName = "ROP.pdf"; // Set the downloaded file name
-
-                fetch(fileURL)
-                    .then(response => response.blob())
-                    .then(blob => {
-                    const url = window.URL.createObjectURL(blob);
-                    const link = document.createElement("a");
-                    link.href = url;
-                    link.download = fileName;
-                    link.click();
-
-                    // Revoke the temporary URL after download (optional)
-                    window.URL.revokeObjectURL(url);
-                    })
-                    .catch(error => {
-                    console.error("Error downloading file:", error);
-                    // Handle download error (optional)
-                    });
-                });
-
-
-
-            </script> -->
-        </div>
-    </section>
-    <section class="info" id="mun">
-        <div class="info-title">
-            <img src="{% static '/pover/img/munsample.JPG' %}" style="width: 40%; height: auto;">
-            <h3>Model United Nations (MUN) is an academic simulation of the United Nations that aims to educate participants about current events, diplomacy, and international relations. Participants, often students, simulate UN committees and other international bodies, engaging in debates and discussions on global issues.</h3>
-        </div>
-    </section>
+                    </ul>
+                </div>
     
-    <section class="features">
-            <div class="divtilesWrap">
-                <ul class="tilesWrap">
-                
-                    <h2 style="text-align: center;   padding-top: 20px;
-                    padding-bottom: 20px; color: #fff;">Features:</h2>
-                    
-                    <li>
-                    <h2>01</h2>
-                    <h3>Research</h3>
-                    <p>Delegates research their assigned country's position on various topics and prepare to articulate and defend these positions during debates.</p>
-                    </li>
-                    <li>
-                    <h2>02</h2>
-                    <h3>Debate</h3>
-                    <p>Delegates engage in debates, negotiations, and discussions to address global challenges and draft resolutions.</p>
+                <div class="row">Designed By: titoS 
+                </div>
+            </div>
+        </footer>
+    
+
+        <script>window.lightbox=[]</script>
+        <script>window.animations=[]</script>
+        <script>window.sliderSettings=[]</script>
+        <script>window.showHideElements={"button-menu-65e5a2e9194b5":true,"icon-menu-65e5a2e9194b7":true,"icon-close-65e5a2e9194b8":false,"mobile-menu-65e5a2e9194b9":false}</script>
+        <script>window.pageWorkflowActions={"login-submit-button":{"workflow_uid":"65e58c08c1404","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"login-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"signup-submit-button":{"workflow_uid":"65e58c08c49c3","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"signup-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"reset-password-submit-button":{"workflow_uid":"65e58c08c8927","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"reset-password-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"set-new-password-submit-button":{"workflow_uid":"65e58c08cd9be","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"set-new-password-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"button-menu-65e5a2e9194b5":{"workflow_uid":"65e5a2e9197b5","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"button-menu-65e5a2e9194b5"}]},{"id":null,"order":2,"const":"TOGGLE_ELEMENT","properties":[{"const":"ELEMENT_IDS","value":["icon-menu-65e5a2e9194b7","icon-close-65e5a2e9194b8","mobile-menu-65e5a2e9194b9"]}]}]}}</script>
+        <script class="dataScript">window.animations=[]</script>
+        <script class="dataScript">window.showHideElements={"button-menu-65e5a2e9194b5":true,"icon-menu-65e5a2e9194b7":true,"icon-close-65e5a2e9194b8":false,"mobile-menu-65e5a2e9194b9":false}</script>
+        <script class="dataScript">window.pageWorkflowActions={"login-submit-button":{"workflow_uid":"65e58c08c1404","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"login-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"signup-submit-button":{"workflow_uid":"65e58c08c49c3","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"signup-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"reset-password-submit-button":{"workflow_uid":"65e58c08c8927","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"reset-password-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"set-new-password-submit-button":{"workflow_uid":"65e58c08cd9be","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"set-new-password-submit-button"}]},{"id":null,"order":2,"const":"SUBMIT_FORM","properties":[]}]},"button-menu-65e5a2e9194b5":{"workflow_uid":"65e5a2e9197b5","actions":[{"id":null,"order":1,"const":"CLICK","properties":[{"const":"ELEMENT_ID","value":"button-menu-65e5a2e9194b5"}]},{"id":null,"order":2,"const":"TOGGLE_ELEMENT","properties":[{"const":"ELEMENT_IDS","value":["icon-menu-65e5a2e9194b7","icon-close-65e5a2e9194b8","mobile-menu-65e5a2e9194b9"]}]}]}}</script>
         
-                    </li>
-                    <li>
-                    <h2>03</h2>
-                    <h3>Diplomacy</h3>
-                    <p>Participants practice diplomacy and negotiation skills, working collaboratively to find solutions to complex issues.</p>
-        
-                    </li>
-                    <li>
-                    <h2>04</h2>
-                    <h3>Education</h3>
-                    <p>MUN conferences provide a platform for experiential learning, fostering critical thinking, public speaking, and research skills.</p>
-                    </li>
-                    </ul>
-            </div>
-    </section>
-    <section class="benefits">
-            <div class="divtilesWrap">
-                <ul class="tilesWrap">
-                
-                    <h2 style="text-align: center;   padding-top: 20px;
-                    padding-bottom: 20px; color: #fff;">Benefits:</h2>
-                        <li>
-                        <h2>01</h2>
-                        <h3>Academic Enrichment</h3>
-                        <p>MUN enhances participants' understanding of international relations, global issues, and diplomatic processes.</p></li>
-                        <li>
-                        <h2>02</h2>
-                        <h3>Skill Development</h3>
-                        <p>Participants develop valuable skills such as research, public speaking, negotiation, and teamwork.</p>
-        
-                        </li>
-                        <li>
-                        <h2>03</h2>
-                        <h3>Networking</h3>
-                        <p>MUN conferences bring together students from diverse backgrounds, fostering cross-cultural understanding and networking opportunities.</p>
-        
-                        </li>
-                        <li>
-                        <h2>04</h2>
-                        <h3>Leadership Opportunities</h3>
-                        <p>MUN offers opportunities for leadership roles within committees, organizing teams, and conference planning committees.</p>
-                        </li>
-                    </ul>
-        
-            </div>
-        </div>
-
-    </section>
-    <section class="team-selection" id="aboutus">
-        <div class="team-title">
-            <h1 style="padding-bottom: 20px; color: #fff;">Our Team</h1>
-        </div>
-        <div class="team-cards">
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="{% static '/pover/img/AIZADA.jpg' %}">
-                </div>
-                <div class="team-detail">
-                    <h3>AIZADA APAROVA</h3>
-                    <p>PRESIDENT</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="{% static '/pover/img/DIAS.jpg' %}">
-                </div>
-                <div class="team-detail">
-                    <h3>DIAS MUSSAGALIYEV</h3>
-                    <p>VICE-PRESIDENT</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="{% static '/pover/img/AIZAT.jpg' %}">
-                </div>
-                <div class="team-detail">
-                    <h3>AIZAT INUSSOVA</h3>
-                    <p>VICE-PRESIDENT</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="{% static '/pover/img/AIDANA.jpg' %}">
-                </div>
-                <div class="team-detail">
-                    <h3>AIDANA YERKIN</h3>
-                    <p>VICE-PRESIDENT</p>
-                </div>
-            </div>
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="{% static '/pover/img/RAMAZAN.jpg' %}">
-                </div>
-                <div class="team-detail">
-                    <h3>RAMAZAN AKZHOLTAYEV</h3>
-                    <p>VICE-PRESIDENT</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="footer">
-            <div class="row">
-                <a href="https://t.me/numunclub"><i class="fa fa-telegram"></i></a>
-                <a href="https://www.instagram.com/numunclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-
-            <div class="row">
-                <ul>
-                <li><a href="#main">Main</a></li>
-                <li><a href="#mun">What is MUN</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#contact">Contacts</a></li>
-                </ul>
-            </div>
-
-            <div class="row">Designed By: titoS 
-            </div>
-        </div>
-    </footer>
-
-
-</body>
+        <script src="https://cdn.ycode.com/yc/js/swiper-bundle.min.js"></script>
+        <script src="https://cdn.ycode.com/yc/js/gsap-latest-beta.min.js"></script>
+        <script src="https://cdn.ycode.com/yc/js/ScrollTrigger.min.js"></script>
+        <script>window.logMonthlyVisits=true</script>
+        <script src="/js/generated.js?id=8a51c6e4365606f9ea2e"></script>
+    </body>
 </html>
